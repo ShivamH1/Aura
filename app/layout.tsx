@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
+import LocomotiveScrollWrapper from "@/components/LocomotiveScroll";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -25,7 +26,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={outfit.variable}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <LocomotiveScrollWrapper>{children}</LocomotiveScrollWrapper>
+      </body>
     </html>
   );
 }

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "locomotive-scroll/dist/locomotive-scroll.css";
 
 @theme {
   --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
@@ -58,6 +59,35 @@ body {
 .scroll-x::-webkit-scrollbar-thumb {
   background: rgb(255 255 255 / 0.22);
   border-radius: 999px;
+}
+
+/* Global scrollbar styling */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--accent) 60%, rgba(255, 255, 255, 0.35));
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 @media (prefers-reduced-motion: reduce) {
