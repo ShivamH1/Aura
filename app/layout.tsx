@@ -10,7 +10,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aura-weather.vercel.app"),
+  metadataBase: new URL("https://aura-feel-weather.vercel.app"),
   title: {
     default: "Aura — Feel the Weather",
     template: "%s | Aura",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aura-weather.vercel.app",
+    url: "https://aura-feel-weather.vercel.app",
     title: "Aura — Feel the Weather",
     description:
       "An immersive, AI-powered weather experience. Search any city and watch the sky come alive with dynamic canvas visual weather physics.",

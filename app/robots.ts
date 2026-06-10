@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/", // Secure API routes from web crawlers
     },
-    sitemap: "https://aura-weather.vercel.app/sitemap.xml",
+    sitemap: "https://aura-feel-weather.vercel.app/sitemap.xml",
   };
 }
