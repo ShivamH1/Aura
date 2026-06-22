@@ -2,7 +2,7 @@
 
 An immersive, AI-powered weather experience built with **Next.js 15**, **GSAP**, **LangChain.js + Mistral AI**, and the **OpenWeather API**.
 
-Search any city and the entire screen *becomes* that city's sky — rain streaks, drifting snow, a sun or moon arcing across a star-flecked night, rolling fog, thunderstorm flashes — all color-graded to the city's **real local time** (dawn / day / golden hour / dusk / night). On top of live data, Mistral gives the weather a soul: a **mood/vibe**, **smart recommendations**, and a **conversational assistant** grounded in the current conditions.
+Search any city and the entire screen _becomes_ that city's sky — rain streaks, drifting snow, a sun or moon arcing across a star-flecked night, rolling fog, thunderstorm flashes — all color-graded to the city's **real local time** (dawn / day / golden hour / dusk / night). On top of live data, Mistral gives the weather a soul: a **mood/vibe**, **smart recommendations**, and a **conversational assistant** grounded in the current conditions.
 
 ## Features
 
@@ -78,3 +78,37 @@ API keys stay **server-side** — the browser only talks to same-origin `/api/*`
 - "Music vibe" is an AI-described mood, not a live music integration.
 
 Built with Next.js, GSAP, LangChain, Mistral AI, and OpenWeather.
+
+---
+
+## 📸 Application Screenshots
+
+### Landing — Idle Sky
+
+The app loads with a living, atmospheric sky animated to the current time of day. Quick-city pills let you instantly jump into any weather.
+
+![Aura Landing](public/screenshots/01-landing.png)
+
+### Search Bar
+
+City autocomplete powered by the OpenWeather Geocoding API — type any city name and select from live suggestions.
+
+![Search Input](public/screenshots/03-search-input.png)
+
+### Weather Dashboard
+
+Once a city is selected, the full dashboard renders with real-time conditions, a 24h hourly strip, AI vibe, smart recommendations, and a chat panel.
+
+![Weather Dashboard](public/screenshots/05-weather-dashboard.png)
+
+### Full Dashboard (All Panels)
+
+The complete view with the 5-day forecast, AI recommendations, and the Aura chat assistant.
+
+![Full Dashboard](public/screenshots/06-weather-full.png)
+
+### Mobile View
+
+Fully responsive — the glassmorphism UI adapts beautifully to any screen size.
+
+![Mobile View](public/screenshots/07-mobile-landing.png)
